@@ -25,7 +25,7 @@ public class BlogService {
 	
 	public ResponseEntity<List<BlogModel>> getAllBlogs() {
 		List<BlogModel> fetchedBlog = blogReposiroty.findAll();
-		return new ResponseEntity<List<BlogModel>>(fetchedBlog ,HttpStatus.FOUND);
+		return new ResponseEntity<List<BlogModel>>(fetchedBlog ,HttpStatus.OK);
 	}
 
 }

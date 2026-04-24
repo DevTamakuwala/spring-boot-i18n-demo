@@ -2,6 +2,7 @@ package in.devtamakuwala.i18n.spring_boot_i18n_demo.model;
 
 import java.time.LocalDateTime;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,6 +18,7 @@ public class BlogModel {
 	private Integer id;
 	private String title;
 	private String summary;
+	@Column(length = 3600)
 	private String content;
 	private LocalDateTime created_at;
 
